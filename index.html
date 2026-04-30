@@ -4,210 +4,391 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arssian</title>
+    <title>HEKSAAA — Team Portfolio</title>
+    <meta name="description"
+        content="Meet the HEKSAAA team — 7 talented developers and designers building the future of web.">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <!-- Animated Background Particles -->
+    <div class="bg-particles" id="particles"></div>
+
     <!-- *************************Navbar************************* -->
-    <header class="header">
-        <a href="#" class="logo",>AXH</a>
-        <i class='bx bx-menu' id="menu" style='color:#ffffff'></i>
-        <nav class="navbar">
-            <a href="#home" style="--vlr:1" class="active">Home</a>
-            <a href="#about" style="--vlr:2">About Me</a>
-            <a href="#education" style="--vlr:3">Education</a>
-            <a href="#skills" style="--vlr:4">Skills</a>
-            <a href="#contact" style="--vlr:5">Contact Me</a>
+    <header class="header" id="header">
+        <a href="#" class="logo">HEKSAAA</a>
+        <i class='bx bx-menu' id="menu"></i>
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="nav-link active" style="--vlr:1">Home</a>
+            <a href="#about" class="nav-link" style="--vlr:2">About</a>
+            <a href="#team" class="nav-link" style="--vlr:3">Our Team</a>
+            <a href="#skills" class="nav-link" style="--vlr:4">Skills</a>
+            <a href="#contact" class="nav-link" style="--vlr:5">Contact</a>
         </nav>
     </header>
-    <!-- *************************Home Section************************* -->
-    <section class="home"  id="home">
-        <div class="text-content">
-            <h1>I'm ARMAN HUSSAIN</h1>
-            <div class="text-animation">
-                <h2>Frontend Developer</h2>
+
+    <!-- *************************Hero Section************************* -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge">🚀 Creative Team</div>
+            <h1 class="hero-title">
+                We Are <span class="gradient-text">HEKSAAA</span>
+            </h1>
+            <div class="hero-typewriter">
+                <h2 id="typewriter-text"></h2>
+                <span class="cursor">|</span>
             </div>
-    <p>I create responsive, user-friendly, and modern web interfaces using the latest technologies. I love turning ideas into interactive digital experiences.</p>
-            <div class="btn-section">
-                <button class="btn">Hire me</button>
-                <button class="btn">Let's Talk</button>
+            <p class="hero-description">A team of 7 passionate developers & designers crafting modern, responsive, and
+                user-friendly digital experiences. Click on any member to explore their portfolio.</p>
+            <div class="hero-buttons">
+                <a href="#team" class="btn btn-primary">
+                    <i class='bx bx-group'></i> Meet Our Team
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class='bx bx-envelope'></i> Get In Touch
+                </a>
             </div>
-            <div class="social-media">
-        <i class='bx bxl-twitter' style="--vlr:7"></i>
-        <i class='bx bxl-facebook' style="--vlr:8"></i>
-        <i class='bx bxl-youtube' style="--vlr:9"></i>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="7">0</span>
+                    <span class="stat-label">Team Members</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="25">0</span>
+                    <span class="stat-label">Projects Done</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="15">0</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
             </div>
         </div>
-        <img src="ar.png" alt="">
+        <div class="hero-visual">
+            <div class="hex-grid">
+                <div class="hex hex-1"></div>
+                <div class="hex hex-2"></div>
+                <div class="hex hex-3"></div>
+                <div class="hex hex-4"></div>
+                <div class="hex hex-5"></div>
+            </div>
+        </div>
     </section>
+
     <!-- *************************About Section************************* -->
-    <section class="about" id="about">
-        <h2 class="title">About <span>Me</span></h2>
-        <img src="arman.png" alt="" class="aboutImg">
-        <div class="text-content2">
-            <h2>Frontend Developer</h2>
-    <p>I am a passionate and dedicated Frontend Developer with a strong interest in creating modern, responsive, and user-friendly web interfaces. I enjoy turning ideas into real-world digital experiences using technologies like HTML, CSS, JavaScript, and modern frameworks.
-
-I focus on writing clean, efficient, and maintainable code while ensuring great user experience and performance. I am always eager to learn new tools and technologies to stay updated in the fast-growing web development world.
-
-Apart from coding, I enjoy solving problems, exploring new design trends, and continuously improving my skills. My goal is to build impactful web applications that not only look good but also provide real value to users..</p>
-           <button class="btn" onclick="goToPage()">Read More</button>
-
-<script>
-function goToPage() {
-  window.location.href = "about.html";
-}
-</script>
-            
-        </div>
-    </section>
-    <!-- *************************Education Section************************* -->
-    <section class="education" id="education">
-        <h2 class="title">My <span>Education</span></h2>
-        <div class="row">
-            <div class="column">
-                <h2>Education</h2>
-                <div class="box">
-                    <div class="education-content">
-                        <div class="content">
-    <div class="year">2021-22<i class='bx bxs-calendar'></i></div>
-    <h3>Matriculation</h3>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium tenetur enim,
-        deserunt libero quisquam ab eius minus odio quod dicta!</p>
-                        </div>
-                    </div>
-                    <div class="education-content">
-                        <div class="content">
-        <div class="year">2022-23 <i class='bx bxs-calendar'></i></div>
-                            <h3>Intermediate</h3>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium tenetur enim,
-        deserunt libero quisquam ab eius minus odio quod dicta!</p>
-                        </div>
-                    </div>
-                    <div class="education-content">
-    <div class="content">
-        <div class="year">2025-29 <i class='bx bxs-calendar'></i></div>
-        <h3>B.Tech Continue</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium tenetur enim,
-            deserunt libero quisquam ab eius minus odio quod dicta!</p>
-    </div>
-                    </div>
-                </div>
+    <section class="about-section" id="about">
+        <h2 class="section-title">About <span>HEKSAAA</span></h2>
+        <div class="about-grid">
+            <div class="about-card glass-card">
+                <div class="about-icon"><i class='bx bx-target-lock'></i></div>
+                <h3>Our Mission</h3>
+                <p>To deliver innovative, high-quality web solutions that transform ideas into powerful digital
+                    experiences. We believe in clean code, creative design, and collaboration.</p>
             </div>
-            <div class="column">
-                <h2>Education</h2>
-                <div class="box">
-                    <div class="education-content">
-    <div class="content">
-        <div class="year">2025-29<i class='bx bxs-calendar'></i></div>
-        <h3>Degree College</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium tenetur enim,
-            deserunt libero quisquam ab eius minus odio quod dicta!</p>
-    </div>
-</div>
-                    <div class="education-content">
-    <div class="content">
-        <div class="year">2025-29 <i class='bx bxs-calendar'></i></div>
-    <h3>Degree College</h3>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium tenetur enim,
-        deserunt libero quisquam ab eius minus odio quod dicta!</p>
-                        </div>
-                    </div>
-                    <div class="education-content">
-                        <div class="content">
-                <div class="year">2025-29 <i class='bx bxs-calendar'></i></div>
-                            <h3>Degree College</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium tenetur enim,
-            deserunt libero quisquam ab eius minus odio quod dicta!</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="about-card glass-card">
+                <div class="about-icon"><i class='bx bx-bulb'></i></div>
+                <h3>Our Vision</h3>
+                <p>To become a leading tech team recognized for pushing the boundaries of modern web development and
+                    creating impactful applications that make a difference.</p>
+            </div>
+            <div class="about-card glass-card">
+                <div class="about-icon"><i class='bx bx-heart'></i></div>
+                <h3>Our Values</h3>
+                <p>Innovation, teamwork, continuous learning, and a relentless pursuit of excellence define who we are.
+                    We grow together and lift each other up.</p>
             </div>
         </div>
     </section>
+
+    <!-- *************************Team Section************************* -->
+    <section class="team-section" id="team">
+        <h2 class="section-title">Our <span>Team</span></h2>
+        <p class="section-subtitle">Click on any member to view their full portfolio</p>
+
+        <div class="team-grid">
+            <!-- Member 1 -->
+            <a href="member1.html" class="member-card glass-card" id="member-1" style="--delay:0.1s">
+                <div class="member-glow"></div>
+                <div class="member-avatar">
+                    <img src="humayu.jpeg" alt="Arman Hussain" class="avatar-img">
+                    <div class="member-status online"></div>
+                </div>
+                <h3 class="member-name">HUMAYUN PARWEZ</h3>
+                <span class="member-role">Team Lead & Frontend Developer</span>
+                <p class="member-bio">Passionate about crafting modern, responsive web interfaces with clean and
+                    efficient code.</p>
+                <div class="member-skills-preview">
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                </div>
+                <div class="card-arrow">
+                    <i class='bx bx-right-arrow-alt'></i>
+                </div>
+            </a>
+
+            <!-- Member 2 -->
+            <a href="member2.html" class="member-card glass-card" id="member-2" style="--delay:0.2s">
+                <div class="member-glow"></div>
+                <div class="member-avatar">
+                    <img src="ena.jpeg" alt="Ena Rushan" class="avatar-img">
+                    <div class="member-status online"></div>
+                </div>
+                <h3 class="member-name">ENA RUSHAN</h3>
+                <span class="member-role">Backend Developer</span>
+                <p class="member-bio">Expert in server-side technologies and building scalable, secure APIs and
+                    databases.</p>
+                <div class="member-skills-preview">
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">MongoDB</span>
+                </div>
+                <div class="card-arrow">
+                    <i class='bx bx-right-arrow-alt'></i>
+                </div>
+            </a>
+
+            <!-- Member 3 -->
+            <a href="member3.html" class="member-card glass-card" id="member-3" style="--delay:0.3s">
+                <div class="member-glow"></div>
+                <div class="member-avatar">
+                    <img src="kushal.jpeg" alt="Anurag Shaw" class="avatar-img">
+                    <div class="member-status online"></div>
+                </div>
+                <h3 class="member-name">KUSHAL JHA</h3>
+                <span class="member-role">UI/UX Designer</span>
+                <p class="member-bio">Creating intuitive, beautiful user interfaces with a focus on user experience and
+                    accessibility.</p>
+                <div class="member-skills-preview">
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">Adobe XD</span>
+                    <span class="skill-tag">CSS</span>
+                </div>
+                <div class="card-arrow">
+                    <i class='bx bx-right-arrow-alt'></i>
+                </div>
+            </a>
+
+            <!-- Member 4 -->
+            <a href="member4.html" class="member-card glass-card" id="member-4" style="--delay:0.4s">
+                <div class="member-glow"></div>
+                <div class="member-avatar">
+                    <img src="sharique.jpeg" alt="Ali Afreen" class="avatar-img">
+                    <div class="member-status online"></div>
+                </div>
+                <h3 class="member-name">SHARIQUE</h3>
+                <span class="member-role">Full Stack Developer</span>
+                <p class="member-bio">Bridging frontend and backend with end-to-end web application development
+                    expertise.</p>
+                <div class="member-skills-preview">
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Express</span>
+                    <span class="skill-tag">SQL</span>
+                </div>
+                <div class="card-arrow">
+                    <i class='bx bx-right-arrow-alt'></i>
+                </div>
+            </a>
+
+            <!-- Member 5 -->
+            <a href="member5.html" class="member-card glass-card" id="member-5" style="--delay:0.5s">
+                <div class="member-glow"></div>
+                <div class="member-avatar">
+                    <img src="afreen.jpeg" alt="Ena Rushan" class="avatar-img">
+                    <div class="member-status online"></div>
+                </div>
+                <h3 class="member-name">ALI AFREEN</h3>
+                <span class="member-role">Mobile App Developer</span>
+                <p class="member-bio">Building cross-platform mobile applications with seamless performance and
+                    beautiful UIs.</p>
+                <div class="member-skills-preview">
+                    <span class="skill-tag">Flutter</span>
+                    <span class="skill-tag">Dart</span>
+                    <span class="skill-tag">Firebase</span>
+                </div>
+                <div class="card-arrow">
+                    <i class='bx bx-right-arrow-alt'></i>
+                </div>
+            </a>
+
+            <!-- Member 6 -->
+            <a href="member6.html" class="member-card glass-card" id="member-6" style="--delay:0.6s">
+                <div class="member-glow"></div>
+                <div class="member-avatar">
+                    <img src="anurag.jpeg" alt="Kushal Jha" class="avatar-img">
+                    <div class="member-status online"></div>
+                </div>
+                <h3 class="member-name">ANURAG SHAW</h3>
+                <span class="member-role">Data Analyst</span>
+                <p class="member-bio">Transforming raw data into meaningful insights through visualization and
+                    statistical analysis.</p>
+                <div class="member-skills-preview">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">Excel</span>
+                </div>
+                <div class="card-arrow">
+                    <i class='bx bx-right-arrow-alt'></i>
+                </div>
+            </a>
+
+            <!-- Member 7 -->
+            <a href="member7.html" class="member-card glass-card" id="member-7" style="--delay:0.7s">
+                <div class="member-glow"></div>
+                <div class="member-avatar">
+                    <img src="arman.png" alt="Sharique" class="avatar-img">
+                    <div class="member-status online"></div>
+                </div>
+                <h3 class="member-name">ARMAN HUSSAIN</h3>
+                <span class="member-role">DevOps Engineer</span>
+                <p class="member-bio">Streamlining deployment pipelines and maintaining robust infrastructure for the
+                    team.</p>
+                <div class="member-skills-preview">
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Linux</span>
+                </div>
+                <div class="card-arrow">
+                    <i class='bx bx-right-arrow-alt'></i>
+                </div>
+            </a>
+        </div>
+    </section>
+
     <!-- *************************Skills Section************************* -->
-    <section class="skills" id="skills">
-        <h2 class="title">My <span>Skills</span></h2>
-        <div class="wrapper">
-            <div class="skill-content">
-                <h3 class="skill-title">Language</h3>
-                <div class="skill-box skill-box1">
-                    <div class="single-skill">
-                        <span class="topic">HTML</span>
-                        <span class="topic">90%</span>
-                    </div>
-                    <div class="bar-side">
-                        <div class="bar bar-1"></div>
-                    </div>
-                    <div class="single-skill">
-                        <span class="topic">CSS</span>
-                        <span class="topic">90%</span>
-                    </div>
-                    <div class="bar-side">
-                        <div class="bar bar-2"></div>
-                    </div>
-                    <div class="single-skill">
-                        <span class="topic">JavaScript</span>
-                        <span class="topic">70%</span>
-                    </div>
-                    <div class="bar-side">
-                        <div class="bar bar-3"></div>
+    <section class="skills-section" id="skills">
+        <h2 class="section-title">Team <span>Expertise</span></h2>
+        <div class="skills-grid">
+            <div class="skill-card glass-card">
+                <div class="skill-icon"><i class='bx bx-code-alt'></i></div>
+                <h3>Frontend</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-bar" data-width="90%">
+                        <span class="skill-percent">90%</span>
                     </div>
                 </div>
             </div>
-            <div class="skill-content">
-                <h3 class="skill-title">Language</h3>
-                <div class="skill-box skill-box2">
-                    <div class="single-skill">
-                        <span class="topic">HTML</span>
-                        <span class="topic">90%</span>
+            <div class="skill-card glass-card">
+                <div class="skill-icon"><i class='bx bx-server'></i></div>
+                <h3>Backend</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-bar" data-width="80%">
+                        <span class="skill-percent">80%</span>
                     </div>
-                    <div class="bar-side">
-                        <div class="bar bar-1"></div>
-                    </div>
-                    <div class="single-skill">
-                        <span class="topic">CSS</span>
-                        <span class="topic">80%</span>
-                    </div>
-                    <div class="bar-side">
-                        <div class="bar bar-2"></div>
-                    </div>
-                <div class="single-skill">
-                    <span class="topic">JavaScript</span>
-                    <span class="topic">70%</span>
                 </div>
-                    <div class="bar-side">
-                        <div class="bar bar-3"></div>
+            </div>
+            <div class="skill-card glass-card">
+                <div class="skill-icon"><i class='bx bx-palette'></i></div>
+                <h3>UI/UX Design</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-bar" data-width="85%">
+                        <span class="skill-percent">85%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card glass-card">
+                <div class="skill-icon"><i class='bx bx-mobile-alt'></i></div>
+                <h3>Mobile Dev</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-bar" data-width="75%">
+                        <span class="skill-percent">75%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card glass-card">
+                <div class="skill-icon"><i class='bx bx-data'></i></div>
+                <h3>Data Analysis</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-bar" data-width="70%">
+                        <span class="skill-percent">70%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card glass-card">
+                <div class="skill-icon"><i class='bx bx-cloud'></i></div>
+                <h3>Cloud & DevOps</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-bar" data-width="65%">
+                        <span class="skill-percent">65%</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- *************************Contact Section************************* -->
-    <section class="contact" id="contact">
-        <h2 class="title">Contact<span>Me</span></h2>
-        <form action="#" id="">
-            <div class="input-box">
-    <input type="text" required placeholder="Full Name">
-    <input type="email" required placeholder="Email">
-            </div>
-            <div class="input-box">
-    <input type="tel" required placeholder="Mobile Number">
-    <input type="email" required placeholder="Subject For">
-            </div>
-    <textarea name="" id="" cols="30" rows="10" placeholder="Message" required></textarea>
-    <input type="submit" value="Send Message" class="btn">
-        </form>
 
+    <!-- *************************Contact Section************************* -->
+    <section class="contact-section" id="contact">
+        <h2 class="section-title">Contact <span>Us</span></h2>
+        <p class="section-subtitle">Have a project in mind? Let's build something amazing together!</p>
+        <form action="#" class="contact-form" id="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <input type="text" id="name" required placeholder=" ">
+                    <label for="name">Full Name</label>
+                    <i class='bx bx-user'></i>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required placeholder=" ">
+                    <label for="email">Email Address</label>
+                    <i class='bx bx-envelope'></i>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <input type="tel" id="phone" required placeholder=" ">
+                    <label for="phone">Phone Number</label>
+                    <i class='bx bx-phone'></i>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" required placeholder=" ">
+                    <label for="subject">Subject</label>
+                    <i class='bx bx-notepad'></i>
+                </div>
+            </div>
+            <div class="form-group full-width">
+                <textarea id="message" rows="6" required placeholder=" "></textarea>
+                <label for="message">Your Message</label>
+                <i class='bx bx-message-dots'></i>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit">
+                <i class='bx bx-send'></i> Send Message
+            </button>
+        </form>
     </section>
-    <footer>
-        <div class="text">
-            <p>Copyright @ 2024 by Arssian</p>
+
+    <!-- *************************Footer************************* -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3 class="logo">HEKSAAA</h3>
+                <p>A team of 7 passionate developers building the future.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#team">Team</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-socials">
+                <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                <a href="#" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                <a href="#" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+            </div>
         </div>
-       <a href="#"> <i class='bx bx-up-arrow-alt'></i></a>
+        <div class="footer-bottom">
+            <p>&copy; 2026 HEKSAAA Team. All rights reserved.</p>
+        </div>
+        <a href="#home" class="back-to-top" id="backToTop">
+            <i class='bx bx-up-arrow-alt'></i>
+        </a>
     </footer>
+
     <script src="script.js"></script>
 </body>
 

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member 4 — HEKSAAA Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="member.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-particles"></div>
+    <a href="index.html" class="back-btn"><i class='bx bx-arrow-back'></i> Back to Team</a>
+    <div class="member-hero">
+        <div class="member-hero-avatar"><i class='bx bx-user'></i></div>
+        <div class="member-hero-info">
+            <h1>ALI AFREEN</h1>
+            <div class="role-badge">Full Stack Developer</div>
+            <p>Bridging frontend and backend with end-to-end web application development expertise. Loves building
+                complete products from concept to deployment.</p>
+            <div class="member-socials">
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="detail-section">
+        <h2>My <span>Skills</span></h2>
+        <div class="member-skills-list">
+            <div class="member-skill-item">
+                <div class="member-skill-header"><span>React</span><span class="pct">85%</span></div>
+                <div class="member-skill-bar-bg">
+                    <div class="member-skill-bar-fill" data-width="85%"></div>
+                </div>
+            </div>
+            <div class="member-skill-item">
+                <div class="member-skill-header"><span>Node.js</span><span class="pct">80%</span></div>
+                <div class="member-skill-bar-bg">
+                    <div class="member-skill-bar-fill" data-width="80%"></div>
+                </div>
+            </div>
+            <div class="member-skill-item">
+                <div class="member-skill-header"><span>SQL</span><span class="pct">75%</span></div>
+                <div class="member-skill-bar-bg">
+                    <div class="member-skill-bar-fill" data-width="75%"></div>
+                </div>
+            </div>
+            <div class="member-skill-item">
+                <div class="member-skill-header"><span>TypeScript</span><span class="pct">70%</span></div>
+                <div class="member-skill-bar-bg">
+                    <div class="member-skill-bar-fill" data-width="70%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="detail-section">
+        <h2>My <span>Projects</span></h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Social Media Platform</h3>
+                <p>A full-stack social media app with posts, likes, comments, and real-time notifications.</p>
+                <div class="project-tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+            </div>
+            <div class="project-card">
+                <h3>Job Board Application</h3>
+                <p>Complete job listing platform with search, filters, and application tracking system.</p>
+                <div class="project-tags"><span>Next.js</span><span>PostgreSQL</span><span>API</span></div>
+            </div>
+            <div class="project-card">
+                <h3>Blog CMS</h3>
+                <p>Content management system with rich text editor, media uploads, and SEO tools.</p>
+                <div class="project-tags"><span>React</span><span>Express</span><span>MySQL</span></div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 HEKSAAA Team — Member 4 Portfolio</p>
+        </div>
+    </footer>
+    <script>const bars = document.querySelectorAll('.member-skill-bar-fill'); const obs = new IntersectionObserver(e => { e.forEach(x => { if (x.isIntersecting) { x.target.style.width = x.target.dataset.width; obs.unobserve(x.target) } }) }, { threshold: 0.3 }); bars.forEach(b => obs.observe(b));</script>
+</body>
+
+</html>
