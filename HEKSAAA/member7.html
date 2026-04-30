@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member 7 — HEKSAAA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="member.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-particles"></div>
+    <a href="index.html" class="back-btn"><i class='bx bx-arrow-back'></i> Back to Team</a>
+    <div class="member-hero">
+        <div class="member-hero-avatar"><img src="ar.png" alt=""></div>
+        <div class="member-hero-info">
+            <h1>ARMAN HUSSAIN</h1>
+            <div class="role-badge">DevOps Engineer</div>
+            <p>Streamlining deployment pipelines and maintaining robust infrastructure. Automation and reliability
+                focused.</p>
+            <div class="member-socials">
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="detail-section">
+        <h2>My <span>Skills</span></h2>
+        <div class="member-skills-list">
+            <div class="member-skill-item">
+                <div class="member-skill-header"><span>Docker</span><span class="pct">80%</span></div>
+                <div class="member-skill-bar-bg">
+                    <div class="member-skill-bar-fill" data-width="80%"></div>
+                </div>
+            </div>
+            <div class="member-skill-item">
+                <div class="member-skill-header"><span>AWS</span><span class="pct">75%</span></div>
+                <div class="member-skill-bar-bg">
+                    <div class="member-skill-bar-fill" data-width="75%"></div>
+                </div>
+            </div>
+            <div class="member-skill-item">
+                <div class="member-skill-header"><span>Linux</span><span class="pct">85%</span></div>
+                <div class="member-skill-bar-bg">
+                    <div class="member-skill-bar-fill" data-width="85%"></div>
+                </div>
+            </div>
+            <div class="member-skill-item">
+                <div class="member-skill-header"><span>CI/CD</span><span class="pct">70%</span></div>
+                <div class="member-skill-bar-bg">
+                    <div class="member-skill-bar-fill" data-width="70%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="detail-section">
+        <h2>My <span>Projects</span></h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>CI/CD Pipeline</h3>
+                <p>Automated build, test, and deployment pipeline using GitHub Actions and Docker.</p>
+                <div class="project-tags"><span>GitHub Actions</span><span>Docker</span></div>
+            </div>
+            <div class="project-card">
+                <h3>Cloud Infrastructure</h3>
+                <p>Scalable AWS infrastructure with auto-scaling, load balancing, and monitoring.</p>
+                <div class="project-tags"><span>AWS</span><span>Terraform</span></div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 HEKSAAA Team</p>
+        </div>
+    </footer>
+    <script>const bars = document.querySelectorAll('.member-skill-bar-fill'); const obs = new IntersectionObserver(e => { e.forEach(x => { if (x.isIntersecting) { x.target.style.width = x.target.dataset.width; obs.unobserve(x.target) } }) }, { threshold: 0.3 }); bars.forEach(b => obs.observe(b));</script>
+</body>
+
+</html>

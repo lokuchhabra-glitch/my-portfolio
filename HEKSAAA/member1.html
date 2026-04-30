@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arman Hussain — HEKSAAA Portfolio</title>
+    <meta name="description" content="Portfolio of Arman Hussain — Team Lead & Frontend Developer at HEKSAAA.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="member.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-particles"></div>
+    <a href="index.html" class="back-btn"><i class='bx bx-arrow-back'></i> Back to Team</a>
+
+    <div class="member-hero">
+        <div class="member-hero-avatar"><img src="humayu.jpeg" alt="Arman Hussain"></div>
+        <div class="member-hero-info">
+            <h1>HUMAYUN PARWEZ</h1>
+            <div class="role-badge">Team Lead & Frontend Developer</div>
+            <p>I am a passionate and dedicated Frontend Developer with a strong interest in creating modern, responsive,
+                and user-friendly web interfaces. I enjoy turning ideas into real-world digital experiences using
+                technologies like HTML, CSS, JavaScript, and modern frameworks.</p>
+            <div class="member-socials">
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="detail-section">
+        <h2>My <span>Education</span></h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-year">2021 - 2022</div>
+                <h3>Matriculation</h3>
+                <p>Completed matriculation with a strong academic foundation in science and mathematics.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2022 - 2023</div>
+                <h3>Intermediate</h3>
+                <p>Completed intermediate studies with focus on computer science and programming fundamentals.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-year">2025 - 2029</div>
+                <h3>B.Tech (In Progress)</h3>
+                <p>Currently pursuing Bachelor of Technology with specialization in Computer Science.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="detail-section">
+        <h2>My <span>Skills</span></h2>
+        <div class="member-skills-list">
+            <div class="member-skill-item">
+                <div class="member-skill-header"><span>HTML</span><span class="pct">90%</span></div>
+                <div class="member-skill-bar-bg">
+                    <div class="member-skill-bar-fill" data-width="90%"></div>
+                </div>
+            </div>
+            <div class="member-skill-item">
+                <div class="member-skill-header"><span>CSS</span><span class="pct">90%</span></div>
+                <div class="member-skill-bar-bg">
+                    <div class="member-skill-bar-fill" data-width="90%"></div>
+                </div>
+            </div>
+            <div class="member-skill-item">
+                <div class="member-skill-header"><span>JavaScript</span><span class="pct">70%</span></div>
+                <div class="member-skill-bar-bg">
+                    <div class="member-skill-bar-fill" data-width="70%"></div>
+                </div>
+            </div>
+            <div class="member-skill-item">
+                <div class="member-skill-header"><span>React</span><span class="pct">50%</span></div>
+                <div class="member-skill-bar-bg">
+                    <div class="member-skill-bar-fill" data-width="50%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="detail-section">
+        <h2>My <span>Projects</span></h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Personal Portfolio Website</h3>
+                <p>A modern responsive portfolio website showcasing skills and projects with smooth animations.</p>
+                <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+            <div class="project-card">
+                <h3>E-Commerce Landing Page</h3>
+                <p>A pixel-perfect landing page for an e-commerce brand with interactive product showcase.</p>
+                <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            </div>
+            <div class="project-card">
+                <h3>Weather Dashboard</h3>
+                <p>A real-time weather dashboard using API integration with beautiful UI elements.</p>
+                <div class="project-tags"><span>JavaScript</span><span>API</span><span>CSS</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="detail-section">
+        <h2>My <span>Photos</span></h2>
+        <div class="photo-gallery">
+            <div class="photo-item">
+                <div class="photo-placeholder"><i class='bx bx-image'></i><span>Add photo</span></div>
+            </div>
+            <div class="photo-item">
+                <div class="photo-placeholder"><i class='bx bx-image'></i><span>Add photo</span></div>
+            </div>
+            <div class="photo-item">
+                <div class="photo-placeholder"><i class='bx bx-image'></i><span>Add photo</span></div>
+            </div>
+            <div class="photo-item">
+                <div class="photo-placeholder"><i class='bx bx-image'></i><span>Add photo</span></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 HEKSAAA Team — Arman Hussain Portfolio</p>
+        </div>
+    </footer>
+
+    <script>
+        // Animate skill bars on scroll
+        const bars = document.querySelectorAll('.member-skill-bar-fill');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.style.width = e.target.dataset.width;
+                    observer.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.3 });
+        bars.forEach(b => observer.observe(b));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member 2 — HEKSAAA Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="member.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-particles"></div>
+    <a href="index.html" class="back-btn"><i class='bx bx-arrow-back'></i> Back to Team</a>
+    <div class="member-hero">
+        <div class="member-hero-avatar"> <img src="ena.jpeg" alt=""></i></div>
+        <div class="member-hero-info">
+            <h1>ENA RUSHAN</h1>
+            <div class="role-badge">Backend Developer</div>
+            <p>Expert in server-side technologies and building scalable, secure APIs and databases. Focused on
+                performance, reliability, and clean architecture.</p>
+            <div class="member-socials">
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="detail-section">
+        <h2>My <span>Skills</span></h2>
+        <div class="member-skills-list">
+            <div class="member-skill-item">
+                <div class="member-skill-header"><span>Node.js</span><span class="pct">85%</span></div>
+                <div class="member-skill-bar-bg">
+                    <div class="member-skill-bar-fill" data-width="85%"></div>
+                </div>
+            </div>
+            <div class="member-skill-item">
+                <div class="member-skill-header"><span>Python</span><span class="pct">80%</span></div>
+                <div class="member-skill-bar-bg">
+                    <div class="member-skill-bar-fill" data-width="80%"></div>
+                </div>
+            </div>
+            <div class="member-skill-item">
+                <div class="member-skill-header"><span>MongoDB</span><span class="pct">75%</span></div>
+                <div class="member-skill-bar-bg">
+                    <div class="member-skill-bar-fill" data-width="75%"></div>
+                </div>
+            </div>
+            <div class="member-skill-item">
+                <div class="member-skill-header"><span>Express.js</span><span class="pct">70%</span></div>
+                <div class="member-skill-bar-bg">
+                    <div class="member-skill-bar-fill" data-width="70%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="detail-section">
+        <h2>My <span>Projects</span></h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>REST API Platform</h3>
+                <p>A scalable REST API platform with authentication, rate limiting, and auto-generated documentation.
+                </p>
+                <div class="project-tags"><span>Node.js</span><span>Express</span><span>MongoDB</span></div>
+            </div>
+            <div class="project-card">
+                <h3>Chat App Backend</h3>
+                <p>Real-time chat backend using WebSockets with message encryption and user management.</p>
+                <div class="project-tags"><span>Socket.io</span><span>Node.js</span><span>Redis</span></div>
+            </div>
+            <div class="project-card">
+                <h3>Task Management API</h3>
+                <p>Comprehensive task management API with role-based access control and notifications.</p>
+                <div class="project-tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span></div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 HEKSAAA Team — Member 2 Portfolio</p>
+        </div>
+    </footer>
+    <script>const bars = document.querySelectorAll('.member-skill-bar-fill'); const obs = new IntersectionObserver(e => { e.forEach(x => { if (x.isIntersecting) { x.target.style.width = x.target.dataset.width; obs.unobserve(x.target) } }) }, { threshold: 0.3 }); bars.forEach(b => obs.observe(b));</script>
+</body>
+
+</html>

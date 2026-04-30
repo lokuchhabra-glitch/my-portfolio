@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member 3 — HEKSAAA Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="member.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-particles"></div>
+    <a href="index.html" class="back-btn"><i class='bx bx-arrow-back'></i> Back to Team</a>
+    <div class="member-hero">
+        <div class="member-hero-avatar"><img src="kushal.jpeg" alt="kushal"></i></div>
+        <div class="member-hero-info">
+            <h1>KUSHAL JHA</h1>
+            <div class="role-badge">UI/UX Designer</div>
+            <p>Creating intuitive, beautiful user interfaces with a focus on user experience and accessibility.
+                Passionate about design systems and visual storytelling.</p>
+            <div class="member-socials">
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-dribbble'></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="detail-section">
+        <h2>My <span>Skills</span></h2>
+        <div class="member-skills-list">
+            <div class="member-skill-item">
+                <div class="member-skill-header"><span>Figma</span><span class="pct">90%</span></div>
+                <div class="member-skill-bar-bg">
+                    <div class="member-skill-bar-fill" data-width="90%"></div>
+                </div>
+            </div>
+            <div class="member-skill-item">
+                <div class="member-skill-header"><span>Adobe XD</span><span class="pct">85%</span></div>
+                <div class="member-skill-bar-bg">
+                    <div class="member-skill-bar-fill" data-width="85%"></div>
+                </div>
+            </div>
+            <div class="member-skill-item">
+                <div class="member-skill-header"><span>CSS</span><span class="pct">80%</span></div>
+                <div class="member-skill-bar-bg">
+                    <div class="member-skill-bar-fill" data-width="80%"></div>
+                </div>
+            </div>
+            <div class="member-skill-item">
+                <div class="member-skill-header"><span>Illustrator</span><span class="pct">75%</span></div>
+                <div class="member-skill-bar-bg">
+                    <div class="member-skill-bar-fill" data-width="75%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="detail-section">
+        <h2>My <span>Projects</span></h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Mobile Banking App UI</h3>
+                <p>Complete UI/UX design for a modern mobile banking application with dark mode support.</p>
+                <div class="project-tags"><span>Figma</span><span>Prototyping</span><span>UI</span></div>
+            </div>
+            <div class="project-card">
+                <h3>SaaS Dashboard Design</h3>
+                <p>A clean, data-rich dashboard design for a SaaS analytics platform with interactive charts.</p>
+                <div class="project-tags"><span>Adobe XD</span><span>Design System</span></div>
+            </div>
+            <div class="project-card">
+                <h3>E-Learning Platform UI</h3>
+                <p>User-centered design for an e-learning platform with gamification elements.</p>
+                <div class="project-tags"><span>Figma</span><span>UX Research</span><span>UI</span></div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 HEKSAAA Team — Member 3 Portfolio</p>
+        </div>
+    </footer>
+    <script>const bars = document.querySelectorAll('.member-skill-bar-fill'); const obs = new IntersectionObserver(e => { e.forEach(x => { if (x.isIntersecting) { x.target.style.width = x.target.dataset.width; obs.unobserve(x.target) } }) }, { threshold: 0.3 }); bars.forEach(b => obs.observe(b));</script>
+</body>
+
+</html>
